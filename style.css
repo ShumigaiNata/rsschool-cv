@@ -1,0 +1,91 @@
+body {
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+.webpage {
+    text-decoration: none;
+    color: #14487e;
+}
+.pageCV {
+    max-width: 886px;
+    border: 2px solid #B2B4C0;
+    box-shadow: 12px 12px 2px 1px rgba(71, 99, 102, 0.2);
+    padding: 25px;
+}
+.blockTop {
+    background: #cddde9;
+    display: flex;
+}
+.nameBlock {
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo {
+    padding: 20px;
+    max-width: 300px;
+}
+.name {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 48px;
+}
+.linkContact {
+    text-decoration: none;
+    color: #14487e;
+}
+.blockBottom {
+    padding: 0 25px 25px 25px;
+}
+.code {
+    padding: 15px;
+    background: #f6f8fa;
+}
+.spaceBefore {
+    margin-left: -4px;
+}
+.spaceBeforeLine {
+    margin-left: 10px;
+}
+.spaceBeforeAlert {
+    margin-left: 20px;
+}
+.linkProject {
+    text-decoration: none;
+    color: #326659;
+}
+@media screen and (max-width: 860px) {
+    .blockTop {
+        display: flex;
+        flex-direction: column;
+    }
+    .blockPhoto {
+        display: flex;
+        justify-content: center;
+    }
+    .photo {
+        width: 100%
+    }
+}
+@media screen and (max-width: 530px) {
+    .contacts {
+        padding: 0;
+    }
+    .linkContact {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 22px
+    }
+}
+@media screen and (max-width: 370px) {
+    .name {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 24px
+    }
+}
