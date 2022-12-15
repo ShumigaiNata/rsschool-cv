@@ -1,4 +1,4 @@
-# __[rsschool-cv](https://shumigainata.github.io/Repo-Natalia/)__
+# __[rsschool-cv](https://shumigainata.github.io/rsschool-cv/)__
 
 # __Shumigai Natalia__
 # __frontend developer__
