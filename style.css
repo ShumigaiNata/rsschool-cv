@@ -1,48 +1,113 @@
-body {
-    font-family: sans-serif;
+@font-face {
+    font-family: "Lato-Hairline";
+    font-style: auto;
+    src: url("Lato-Hairline.woff") format("woff"),
+    url("Lato-Hairline.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Lora-Regular";
+    font-style: auto;
+    src: url("Lora-Regular.woff") format("woff"),
+    url("Lora-Regular.woff2") format("woff2");
+}
+* {
     margin: 0 auto;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
+    box-sizing: border-box;
 }
-.webpage {
-    text-decoration: none;
-    color: #14487e;
-}
-.pageCV {
+body {
+    margin: 20px auto;
     max-width: 886px;
     border: 2px solid #B2B4C0;
     box-shadow: 12px 12px 2px 1px rgba(71, 99, 102, 0.2);
-    padding: 25px;
+    border-radius: 10px;
 }
-.blockTop {
-    background: #cddde9;
-    display: flex;
+.pageCV {
+    position: relative;
+}
+header {
+    background: #ebc9bb;
+    margin-top: 50px;
+    padding: 120px 0;
+    position: relative;
 }
 .nameBlock {
-    padding: 0 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    right: 130px;
+    bottom: 80px;
+}
+.name, h3 {
+    font-family: Lato-Hairline, sans-serif;
+    text-transform: uppercase;
+}
+.position {
+    font-family: Lora-Regular, sans-serif;
+    text-transform: lowercase;
+    font-style: italic;
+    padding-top: 5px;
+}
+section {
+    background: #5b8f8f;
+    position: absolute;
+    max-width: 35%;
+    margin-left: 50px;
+    top: -50px;
+    color: #ffffff;
+    padding-bottom: 250px;
+    border-radius: 0 0 120px 120px;
 }
 .photo {
-    padding: 20px;
-    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 45px 20px;
+    max-width: 95%;
 }
-.name {
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 48px;
+.block {
+    padding-top: 20px;
+}
+.blockAbout, .blockContact h3 {
+    text-align: center;
+    padding: 10px;
+}
+.blockAbout{
+    padding: 0 30px;
+}
+.blockAbout p {
+    padding-top: 10px;
+    text-align: justify;
+}
+
+li {
+    list-style-type: none;
+}
+.blockContact{
+    padding: 10px 0;
+}
+.contacts {
+    line-height: 24px;
 }
 .linkContact {
     text-decoration: none;
-    color: #14487e;
+    color: #ffffff;
 }
-.blockBottom {
-    padding: 0 25px 25px 25px;
+main {
+    margin-left: 45%;
+    padding-top: 65px;
+}
+.round {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    background: #5b8f8f;
+}
+.text {
+    font-family: Lora-Regular, sans-serif;
+    font-style: italic;
+    padding-top: 15px;
 }
 .code {
+    font-family: Lora-Regular, sans-serif;
     padding: 15px;
     background: #f6f8fa;
 }
@@ -55,37 +120,69 @@ body {
 .spaceBeforeAlert {
     margin-left: 20px;
 }
-.linkProject {
+.linkProject, .pageGit {
     text-decoration: none;
-    color: #326659;
+    color: #000000;
 }
-@media screen and (max-width: 860px) {
-    .blockTop {
-        display: flex;
-        flex-direction: column;
-    }
-    .blockPhoto {
-        display: flex;
-        justify-content: center;
-    }
-    .photo {
-        width: 100%
-    }
+.blockLang {
+    margin-bottom: 20px;
 }
-@media screen and (max-width: 530px) {
-    .contacts {
-        padding: 0;
+footer {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    width: 50px;
+}
+@media screen and (max-width: 786px) {
+    .nameBlock {
+        right: 80px;
     }
-    .linkContact {
-        font-weight: 400;
-        font-size: 12px;
+    .name{
+        font-size: 24px;
         line-height: 22px
     }
-}
-@media screen and (max-width: 370px) {
-    .name {
-        font-weight: 800;
+    .position{
         font-size: 18px;
-        line-height: 24px
+        line-height: 22px
+    }
+    main{
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .nameBlock {
+        /*right: 20px;*/
+    }
+}
+@media screen and (max-width: 620px) {
+    section {
+        margin-left: 0;
+        border-radius: 8px;
+        padding-bottom: 50px;
+    }
+    .blockAbout {
+        padding: 0 10px;
+        font-size: 12px;
+    }
+    .contacts {
+        padding: 10px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    header {
+        padding: 60px 0;
+    }
+    .name{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .position{
+        font-size: 12px;
+    }
+    .nameBlock {
+        top: 30px;
+        left: 50%;
     }
 }
